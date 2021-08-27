@@ -214,6 +214,7 @@ a.link::after {
 }
 
 .bugdroid {
+    max-width: 300px;
     display: block;
     margin: auto;
 }
