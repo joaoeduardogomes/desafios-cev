@@ -96,6 +96,7 @@ main {
     background-color: var(--cor01);
     padding-right: 1rem;
     border-radius: 15px 10px 10px 15px;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.452);
 }
 
 .desafio-link:before {
