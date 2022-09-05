@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url('../imagens/03-social/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    /* position: relative; */
+    height: 100vh;
+
+    max-width: 940px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+section#telefone {
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/03-social/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 78px;
+    left: 21px;
+    width: 269px;
+    height: 474px;
+}
+
+section#redes-sociais {
+    text-align: right;
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /* Pra borda fazer parte da caixa, ao invés de vazar com o efeito do hover */
+    transition: all 0.3s ease-in-out;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.400);
+}
+
+
+@media screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    section#redes-sociais {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
